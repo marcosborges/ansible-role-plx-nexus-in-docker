@@ -1,0 +1,18 @@
+#!/usr/bin/env ansible-playbook
+---
+- name: Play 'Nexus Setup'
+  hosts: localhost
+  strategy: debug
+  become: no
+  vars_files:
+    - defaults/main.yml
+    - vars/main.yml
+
+  tasks:
+    - name: Include main task
+      import_tasks: tasks/main.yml
+  handlers:
+    - name: Include handler task
+      import_tasks: handlers/main.yml
+
+# vim: ft=yaml.ansible :

@@ -1,0 +1,5 @@
+---
+- include: call_script.yml
+  vars:
+    script_name: create_repo_composer_proxy
+    args: "{{ _nexus_repos_composer_defaults|combine(item) }}"

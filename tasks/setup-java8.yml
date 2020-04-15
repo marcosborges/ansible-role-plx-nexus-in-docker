@@ -1,0 +1,17 @@
+- name: JAVA7 - Remove
+  yum: 
+    name: "{{ packages }}"
+    state: absent 
+    use_backend: yum
+  vars:
+    packages:
+    - java-1.7.0-openjdk
+
+- name: JAVA8 - Install
+  yum: 
+    name: "{{ packages }}"
+    state: present 
+    use_backend: yum
+  vars:
+    packages:
+    - java-1.8.0-openjdk 
