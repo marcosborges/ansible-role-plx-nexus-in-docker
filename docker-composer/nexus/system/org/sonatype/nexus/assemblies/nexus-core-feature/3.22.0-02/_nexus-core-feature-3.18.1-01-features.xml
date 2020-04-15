@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.4.0" name="nexus-core-feature">
+    <feature name="nexus-core-feature" description="org.sonatype.nexus.assemblies:nexus-core-feature" version="3.18.1.01">
+        <details>org.sonatype.nexus.assemblies:nexus-core-feature</details>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-audit-plugin</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-blobstore-tasks</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-ssl-plugin</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-coreui-plugin</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-repository-apt</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-repository-golang</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-repository-httpbridge</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-repository-maven</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-repository-npm</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-repository-pypi</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-repository-raw</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-restore-maven</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-blobstore-s3</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-restore-apt</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-restore-npm</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-restore-pypi</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-restore-raw</feature>
+        <feature   prerequisite="false" dependency="false">nexus-repository-composer</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-script-plugin</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-task-log-cleanup</feature>
+        <feature version="3.18.1.01" prerequisite="false" dependency="false">nexus-onboarding-plugin</feature>
+        <feature prerequisite="true" dependency="false">wrap</feature>
+        <bundle>mvn:org.sonatype.nexus/nexus-core/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-supportzip-api/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-email/3.18.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-email/1.5</bundle>
+        <bundle>mvn:com.sun.mail/javax.mail/1.6.1</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-repository/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-capability/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-mime/3.18.1-01</bundle>
+        <bundle>mvn:org.apache.tika/tika-core/1.20</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-blobstore/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-blobstore-api/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-blobstore-file/3.18.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-lang3/3.4</bundle>
+        <bundle>wrap:mvn:com.squareup/tape/1.2.3</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-httpclient/3.18.1-01</bundle>
+        <bundle>mvn:commons-codec/commons-codec/1.10</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-elasticsearch/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus.bundles/org.sonatype.nexus.bundles.elasticsearch/3.18.1-01</bundle>
+        <bundle>mvn:com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.9.2</bundle>
+        <bundle>mvn:com.fasterxml.jackson.dataformat/jackson-dataformat-smile/2.9.2</bundle>
+        <bundle>mvn:com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.9.2</bundle>
+        <bundle>mvn:org.yaml/snakeyaml/1.18</bundle>
+        <bundle>mvn:org.hdrhistogram/HdrHistogram/2.1.6</bundle>
+        <bundle>wrap:mvn:com.vividsolutions/jts/1.13</bundle>
+        <bundle>mvn:com.ning/compress-lzf/1.0.2</bundle>
+        <bundle>mvn:io.netty/netty/3.10.6.Final</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-selector/3.18.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-jexl3/3.1</bundle>
+        <bundle>mvn:org.jboss.spec.javax.ws.rs/jboss-jaxrs-api_2.0_spec/1.0.1.Beta1</bundle>
+        <bundle>wrap:mvn:org.jboss.resteasy/resteasy-jaxrs-services/3.1.3.Final</bundle>
+        <bundle>mvn:org.jboss.spec.javax.annotation/jboss-annotations-api_1.2_spec/1.0.0.Final</bundle>
+        <bundle>wrap:mvn:net.jcip/jcip-annotations/1.0</bundle>
+        <bundle>mvn:org.apache.james/apache-mime4j/0.6</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-cleanup/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-script/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-ssl/3.18.1-01</bundle>
+        <bundle>wrap:mvn:org.apache.geronimo.framework/geronimo-crypto/2.2.1</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-webhooks/3.18.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-compress/1.18</bundle>
+        <bundle>mvn:org.tukaani/xz/1.8</bundle>
+    </feature>
+    <feature name="nexus-audit-plugin" description="org.sonatype.nexus.plugins:nexus-audit-plugin" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-audit-plugin</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-audit-plugin/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-audit/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-webhooks/3.18.1-01</bundle>
+    </feature>
+    <feature name="nexus-blobstore-tasks" description="org.sonatype.nexus.plugins:nexus-blobstore-tasks" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-blobstore-tasks</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-blobstore-tasks/3.18.1-01</bundle>
+    </feature>
+    <feature name="nexus-ssl-plugin" description="org.sonatype.nexus.plugins:nexus-ssl-plugin" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-ssl-plugin</details>
+        <feature prerequisite="true" dependency="false">wrap</feature>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-ssl-plugin/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-ssl/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-crypto/3.18.1-01</bundle>
+        <bundle>wrap:mvn:org.apache.geronimo.framework/geronimo-crypto/2.2.1</bundle>
+    </feature>
+    <feature name="nexus-coreui-plugin" description="org.sonatype.nexus.plugins:nexus-coreui-plugin" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-coreui-plugin</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-coreui-plugin/3.18.1-01</bundle>
+    </feature>
+    <feature name="nexus-repository-golang" description="org.sonatype.nexus.plugins:nexus-repository-golang" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-golang</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-golang/3.18.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-compress/1.18</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-cleanup/3.18.1-01</bundle>
+    </feature>
+    <feature name="nexus-repository-httpbridge" description="org.sonatype.nexus.plugins:nexus-repository-httpbridge" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-httpbridge</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-httpbridge/3.18.1-01</bundle>
+        <bundle>mvn:commons-fileupload/commons-fileupload/1.4</bundle>
+        <bundle>mvn:commons-io/commons-io/2.4</bundle>
+    </feature>
+    <feature name="nexus-repository-maven" description="org.sonatype.nexus.plugins:nexus-repository-maven" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-maven</details>
+        <feature prerequisite="true" dependency="false">wrap</feature>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-maven/3.18.1-01</bundle>
+        <bundle>wrap:mvn:org.apache.maven/maven-model/3.3.3</bundle>
+        <bundle>wrap:mvn:org.codehaus.plexus/plexus-utils/3.1.0</bundle>
+        <bundle>wrap:mvn:org.apache.maven/maven-repository-metadata/3.3.3</bundle>
+        <bundle>mvn:org.eclipse.aether/aether-api/1.0.2.v20150114</bundle>
+        <bundle>mvn:org.eclipse.aether/aether-util/1.0.2.v20150114</bundle>
+        <bundle>mvn:org.eclipse.aether/aether-spi/1.0.2.v20150114</bundle>
+        <bundle>mvn:org.apache.maven.indexer/indexer-reader/5.1.2-816025a</bundle>
+        <bundle>wrap:mvn:org.apache.maven.archetype/archetype-catalog/2.4</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-cleanup/3.18.1-01</bundle>
+    </feature>
+    <feature name="nexus-repository-npm" description="org.sonatype.nexus.plugins:nexus-repository-npm" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-npm</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-npm/3.18.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-compress/1.18</bundle>
+        <bundle>mvn:com.fasterxml.jackson.datatype/jackson-datatype-joda/2.9.2</bundle>
+        <bundle>mvn:com.fasterxml.jackson.core/jackson-annotations/2.9.2</bundle>
+        <bundle>mvn:com.fasterxml.jackson.core/jackson-core/2.9.2</bundle>
+        <bundle>mvn:joda-time/joda-time/2.9.5</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-cleanup/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-rapture/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-extdirect/3.18.1-01</bundle>
+        <bundle>mvn:com.google.code.gson/gson/2.3.1</bundle>
+    </feature>
+    <feature name="nexus-repository-apt" description="org.sonatype.nexus.plugins:nexus-repository-apt" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-apt</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-apt/3.18.1-01</bundle>
+        <bundle>mvn:org.tukaani/xz/1.8</bundle>
+    </feature>
+    <feature name="nexus-repository-pypi" description="org.sonatype.nexus.plugins:nexus-repository-pypi" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-pypi</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-pypi/3.18.1-01</bundle>
+        <bundle>mvn:org.apache.commons/commons-compress/1.18</bundle>
+        <bundle>mvn:org.tukaani/xz/1.8</bundle>
+        <bundle>mvn:org.jsoup/jsoup/1.9.1</bundle>
+    </feature>
+    <feature name="nexus-repository-raw" description="org.sonatype.nexus.plugins:nexus-repository-raw" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-repository-raw</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-raw/3.18.1-01</bundle>
+    </feature>
+    <feature name="nexus-restore-apt" description="org.sonatype.nexus.plugins:nexus-restore-apt" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-apt</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-apt/3.18.1-01</bundle>
+    </feature>
+    <feature name="nexus-restore-maven" description="org.sonatype.nexus.plugins:nexus-restore-maven" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-maven</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-maven/3.18.1-01</bundle>
+    </feature>
+    <feature name="nexus-restore-npm" description="org.sonatype.nexus.plugins:nexus-restore-npm" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-npm</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-npm/3.18.1-01</bundle>
+    </feature>
+    <feature name="nexus-restore-raw" description="org.sonatype.nexus.plugins:nexus-restore-raw" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-raw</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-raw/3.18.1-01</bundle>
+    </feature>
+    <feature name="nexus-script-plugin" description="org.sonatype.nexus.plugins:nexus-script-plugin" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-script-plugin</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-script-plugin/3.18.1-01</bundle>
+    </feature>
+    <feature name="nexus-task-log-cleanup" description="org.sonatype.nexus.plugins:nexus-task-log-cleanup" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-task-log-cleanup</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-task-log-cleanup/3.18.1-01</bundle>
+        <bundle>mvn:commons-io/commons-io/2.4</bundle>
+    </feature>
+    <feature name="nexus-blobstore-s3" description="org.sonatype.nexus.plugins:nexus-blobstore-s3" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-blobstore-s3</details>
+        <feature prerequisite="true" dependency="false">wrap</feature>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-blobstore-s3/3.18.1-01</bundle>
+        <bundle>mvn:io.dropwizard.metrics/metrics-annotation/4.0.5</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-extdirect/3.18.1-01</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-servlet/3.18.1-01</bundle>
+        <bundle>mvn:javax.servlet/javax.servlet-api/3.1.0</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-guice-servlet/3.18.1-01</bundle>
+        <bundle>wrap:mvn:eu.bitwalker/UserAgentUtils/1.19</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-validation/3.18.1-01</bundle>
+        <bundle>mvn:org.hibernate/hibernate-validator/5.1.2.Final</bundle>
+        <bundle>mvn:org.jboss.logging/jboss-logging/3.1.3.GA</bundle>
+        <bundle>mvn:com.fasterxml/classmate/1.0.0</bundle>
+        <bundle>mvn:commons-validator/commons-validator/1.6</bundle>
+        <bundle>mvn:commons-digester/commons-digester/1.8.1</bundle>
+        <bundle>mvn:org.sonatype.nexus/nexus-webresources-api/3.18.1-01</bundle>
+        <bundle>mvn:com.orientechnologies/orientdb-core/2.2.36</bundle>
+        <bundle>mvn:net.java.dev.jna/jna/4.5.0</bundle>
+        <bundle>mvn:net.java.dev.jna/jna-platform/4.5.0</bundle>
+        <bundle>mvn:com.googlecode.concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.4.2</bundle>
+        <bundle>mvn:com.google.code.gson/gson/2.3.1</bundle>
+        <bundle>mvn:commons-fileupload/commons-fileupload/1.4</bundle>
+    </feature>
+    <feature name="nexus-restore-pypi" description="org.sonatype.nexus.plugins:nexus-restore-pypi" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-restore-pypi</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-restore-pypi/3.18.1-01</bundle>
+    </feature>
+    <feature name="nexus-onboarding-plugin" description="org.sonatype.nexus.plugins:nexus-onboarding-plugin" version="3.18.1.01">
+        <details>org.sonatype.nexus.plugins:nexus-onboarding-plugin</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-onboarding-plugin/3.18.1-01</bundle>
+    </feature>
+    
+    <feature name="nexus-repository-composer" description="org.sonatype.nexus.plugins:nexus-repository-composer" version="0.0.4">
+        <details>org.sonatype.nexus.plugins:nexus-repository-composer</details>
+        <bundle>mvn:org.sonatype.nexus.plugins/nexus-repository-composer/0.0.4</bundle>
+    </feature>
+    
+</features>
